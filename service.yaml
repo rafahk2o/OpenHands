@@ -1,0 +1,8 @@
+name: openhands
+image: openhands
+ports:
+  - port: 8000
+    protocol: http
+env:
+  - key: PYTHONUNBUFFERED
+    value: "1"

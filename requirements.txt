@@ -23,3 +23,5 @@ minio>=7.2.8,<8.0.0
 modal>=0.64.145,<0.65.0
 numpy
 PyPDF2
+werkzeug
+flask

@@ -5,6 +5,7 @@ nixPkgs = ["python3", "gcc"]
 cmds = [
   "python -m venv --copies /opt/venv",
   ". /opt/venv/bin/activate",
+  "pip install werkzeug flask",
   "pip install -r requirements.txt",
   "pip install ."
 ]

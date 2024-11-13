@@ -8,19 +8,17 @@ RUN apt-get update && apt-get install -y \
     python3-dev \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy requirements and install Python dependencies
-COPY requirements.txt .
 # Create and activate virtual environment
 RUN python -m venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
+
+# Copy requirements and install Python dependencies
+COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
-RUN pip install .
 
 # Copy the rest of the application
 COPY . .
-
-# Expose the port your app runs on
-EXPOSE 8000
+RUN pip install .
 
 # Command to run the application
-CMD ["python", "-m", "openhands"]
+CMD ["sh", "-c", "source /opt/venv/bin/activate && python -m openhands"]

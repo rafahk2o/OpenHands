@@ -10,8 +10,4 @@ cmds = [
 ]
 
 [start]
-cmd = """
-source /opt/venv/bin/activate
-cd /app
-python -m openhands
-"""
+cmd = "sh -c 'source /opt/venv/bin/activate && python -m openhands'"

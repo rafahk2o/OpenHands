@@ -1,2 +1,25 @@
 Flask==2.0.1
-# Add other dependencies your project needs
+anthropic>=0.39.0
+bashlex>=0.18,<0.19
+boto3
+browsergym==0.10.2
+datasets
+dirhash
+docker
+e2b>=0.17.1,<0.18.0
+fastapi
+gevent>=24.2.1,<25.0.0
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
+google-cloud-aiplatform
+google-generativeai
+grep-ast==0.3.3
+html2text
+jinja2>=3.1.3,<4.0.0
+json-repair
+litellm>=1.51.1,<2.0.0
+minio>=7.2.8,<8.0.0
+modal>=0.64.145,<0.65.0
+numpy
+PyPDF2

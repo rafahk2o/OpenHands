@@ -5,9 +5,8 @@ nixPkgs = ["python3", "gcc"]
 cmds = [
   "python -m venv --copies /opt/venv",
   ". /opt/venv/bin/activate",
-  "pip install -r requirements.txt",
-  "pip install -e ."
+  "pip install -r requirements.txt"
 ]
 
 [start]
-cmd = "source /opt/venv/bin/activate && cd /app && python -m openhands.app"
+cmd = "source /opt/venv/bin/activate && cd /app && python -m flask run --host=0.0.0.0 --port=8000"

@@ -9,4 +9,4 @@ cmds = [
 ]
 
 [start]
-cmd = ". /opt/venv/bin/activate && python -m openhands"
+cmd = "python -m openhands"

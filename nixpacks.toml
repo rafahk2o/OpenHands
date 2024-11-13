@@ -6,13 +6,8 @@ cmds = [
   "python -m venv --copies /opt/venv",
   ". /opt/venv/bin/activate",
   "pip install -r requirements.txt",
-  "pip install -e ."  # Instala o próprio pacote em modo editável
+  "pip install -e ."
 ]
 
 [start]
-cmd = """
-#!/bin/bash
-source /opt/venv/bin/activate
-cd /app
-python -m openhands.app  # ou o caminho correto para o módulo principal
-"""
+cmd = "source /opt/venv/bin/activate && cd /app && python -m openhands.app"

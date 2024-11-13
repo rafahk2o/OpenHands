@@ -25,3 +25,5 @@ numpy
 PyPDF2
 werkzeug
 flask
+Flask==2.0.1
+Werkzeug==2.0.1
